@@ -7,12 +7,16 @@
 ## Running The Project
 1.	Clone the repository
     ```cd client```
+
     ```npm install```
+
     ```npm run dev```
 
 2.  open new terminal
     ```cd server```
+
     ```npm install```
+    
     ```npm run dev```
 
 ### Tech - Frontend
@@ -22,6 +26,7 @@
 ### Tech - Backend
 - Nodejs
 - Expressjs
+- MongoDB
 
 ### Structure - Frontend
 - src
