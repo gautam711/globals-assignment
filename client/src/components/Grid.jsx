@@ -4,7 +4,7 @@ function Grid({ image }) {
   return (
     <div className="w-full border border-black rounded-lg">
       <img
-        className="w-full h:60 lg:h-72 rounded-t-lg"
+        className="w-full h:60 lg:h-72 rounded-t-lg object-cover"
         src={image?.download_url}
         alt="Placeholder"
       />
