@@ -1,4 +1,5 @@
 import ImageModel from "../models/images";
+import loggerService from "./logger.service";
 
 export interface IGetImages {
   skip: string;
@@ -9,6 +10,9 @@ export interface IGetImages {
 export class ImageService {
   public static async getImages(params: IGetImages) {
     const { skip, limit, count } = params;
+    loggerService.info(skip);
+    loggerService.info(limit);
+    loggerService.info(count);
 
     try {
       let query = ImageModel.find({});
@@ -28,6 +32,7 @@ export class ImageService {
         return images;
       }
     } catch (error) {
+      loggerService.error(error)
       throw new Error("Internal server error");
     }
   }
