@@ -2,8 +2,9 @@
 import mongoose from "mongoose";
 import { Connection } from "mongoose";
 
-const dbURI: string =
-  "mongodb://localhost:27017/?readPreference=primary&appname=MongoDB%20Compass&directConnection=true&ssl=false";
+// const dbURI: string =
+//   "mongodb://localhost:27017/?readPreference=primary&appname=MongoDB%20Compass&directConnection=true&ssl=false";
+const dbURI: string = "mongodb+srv://testbuddy:YbvUebgULmYJlSsc@test-buddy.csolk4l.mongodb.net/globals?retryWrites=true&w=majority";
 
 export const _mongoInstance: Connection = mongoose.createConnection(dbURI, {
   retryWrites: false,
