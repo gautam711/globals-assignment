@@ -1,6 +1,3 @@
-## Link to the assignment
-
-
 ## Prerequisite
 - NodeJS  > 18.0.0v
 
