@@ -1,0 +1,20 @@
+import express, { Express } from "express";
+import cors from "cors";
+import routes from "./routes/routes";
+
+const app: Express = express();
+
+app.use(
+  cors({
+    origin: ["http://localhost:5173"],
+  })
+);
+
+// Body parsing middleware
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
+
+// Routes
+app.use("/api/v1", routes);
+
+export { app };

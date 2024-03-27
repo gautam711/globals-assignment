@@ -1,18 +1,6 @@
-import express, {Express} from "express";
-import cors from "cors";
-
-const app: Express = express();
-
-app.use(cors({
-    credentials: true
-}))
-
-// Body parsing middleware
-app.use(express.json());
-app.use(express.urlencoded({ extended: true }));
-
+import loggerService from "./service/logger.service";
+import { app } from "./server";
 
 app.listen(3001, () => {
-	console.log(`Server running on port 3001`);
+  loggerService.info("Server started on port 3001");
 });
-
