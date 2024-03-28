@@ -10,10 +10,6 @@ app.use(
   })
 );
 
-// Body parsing middleware
-app.use(express.json());
-app.use(express.urlencoded({ extended: true }));
-
 // Routes
 app.use("/api/v1", routes);
 

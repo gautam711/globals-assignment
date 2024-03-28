@@ -1,7 +1,7 @@
 import { StatusCodes } from "http-status-codes";
 import { Response, Request } from "express";
 import { ImageService } from "../../service/image.service";
-import loggerService from "service/logger.service";
+import loggerService from "../../service/logger.service";
 
 export interface QueryParams {
   skip: string;

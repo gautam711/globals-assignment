@@ -36,14 +36,4 @@ export class ImageService {
       throw new Error("Internal server error");
     }
   }
-
-  public static async postImage(data: any) {
-    try {
-      const image = await ImageModel.create(data);
-      console.log({ image });
-      return image;
-    } catch (error) {
-      throw new Error(error);
-    }
-  }
 }
